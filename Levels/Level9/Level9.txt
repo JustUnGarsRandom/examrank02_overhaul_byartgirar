@@ -1,0 +1,35 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level9/ag_is_sort_number_lst                           #
+#    Fichier de rendu : ag_is_sort_number_lst.c, ag_is_sort_number_lst.h       #
+#    Fonction Autorisees : Aucune                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          size_t ag_is_sort_number_lst(t_sort_number *lst);                   #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui prend en parametre une liste chainee de nombre
+qui renvoie 0 si la liste est triee, 1 si elle ne l'est pas.
+
+Si la chaine envoyee en parametre est NULL, on estime que la liste n'est
+pas triee.
+
+typedef struct s_sort_number
+{
+        long                      number;
+        struct s_sort_number      *next;
+}       t_sort_number;
+
+On part du principe que la liste envoyee est toujours simple et lineaire.
+
+Exemples :
+
+         ag_is_sort_number_lst(1->2->3);
+Sortie : 0
+
+         ag_is_sort_number_lst(1->42->3);
+Sortie : 1

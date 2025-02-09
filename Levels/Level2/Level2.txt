@@ -1,0 +1,33 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level2/ag_atol                                         #
+#    Fichier de rendu : ag_atol.c                                              #
+#    Fonction Autorisees : Aucune                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          long ag_atol(const char *str);                                      #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez recreer le fonctionnement la fonction atol de la libc comme l'original
+(plus de precision avec man atol).
+
+Le rendu se fera sous une fonction que vous aurez creez tel que le prototype en
+consigne.
+
+Exemples :
+
+         ag_atol("42");
+Sortie : 42
+
+         ag_atol("-42");
+Sortie : -42
+
+         ag_atol("Je suis etudiant a 42.");
+Sortie : 0
+
+         ag_atol("12345 Bon courage !!!");
+Sortie : 12345

@@ -1,0 +1,36 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level7/ag_split                                        #
+#    Fichier de rendu : ag_split.c                                             #
+#    Fonction Autorisees : malloc                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          char **ag_split(char *str, char c);                                 #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui prend en parametre une chaine de caractere
+et un caractere et qui retourne un tableau de chaines de caracteres contenant
+dans chaque chaine le contenu de la chaine passe en parametre separee par le
+caractere mis en parametre.
+
+Si la chaine est NULL, alors la fonction doit renvoyer un NULL.
+
+Le tableau doit obligatoirement etre termine par un NULL.
+
+Exemples :
+
+	ag_split("42 Student, break the codes.", ' ');
+Sortie : 42 | Student, | break | the | codes. | NULL
+
+        ag_split("Gambatene !", 'g');
+Sortie : Gambatene ! | NULL
+
+        ag_split("                      ", ' ');
+Sortie : NULL
+
+        ag_split("Le Havre est une belle ville.", 'e');
+Sortie : L |  Havr |   | st un |  b | ll |  vill | . | NULL

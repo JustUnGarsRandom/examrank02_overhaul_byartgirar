@@ -1,0 +1,33 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level1/ag_strlen                                       #
+#    Fichier de rendu : ag_strlen.c                                            #
+#    Fonction Autorisees : Aucune                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          size_t ag_strlen(char *str);                                        #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales :
+
+Vous devez creer une fonction qui prend en parametres une chaine de caracteres
+et qui renvoie un size_t de la taille de la chaine mise en parametres sans le
+caractere NULL.
+
+Si un parametre NULL est envoye, alors la fonction doit retourner une taille 0.
+
+Exemples :
+
+         ag_strlen("Petite chaine");
+Sortie : 13
+
+         ag_strlen("Ceci est une grosse chaine");
+Sortie : 26
+
+         ag_strlen("1");
+Sortie : 1
+
+         ag_strlen(NULL);
+Sortie : 0

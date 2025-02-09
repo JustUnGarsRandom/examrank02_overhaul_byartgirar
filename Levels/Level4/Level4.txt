@@ -1,0 +1,38 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level4/ag_weakness                                     #
+#    Fichier de rendu : ag_weakness.c                                          #
+#    Fonction Autorisees : Aucune                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          size_t ag_weakness(char *str1, char *str2);                         #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui prend en parametres deux chaines de caracteres
+et qui compare la somme des caracters ASCII de chacune des chaines.
+
+La fonction doit renvoyer :
+	- 0 : Si la somme des deux chaines sont egales.
+	- 1 : Si la somme de la premiere chaine est plus grande que la deuxieme.
+	- 2 : Si la somme de la deuxieme chaine est plus grande que la premiere.
+
+Si une seule deux chaines est NULL, alors l'autre chaine est necessairement
+plus grande. Si les deux le sont, alors on considere que leur somme est egale.
+
+Exemples :
+
+         ag_weakness("Etudiant 42", "42 Etudiant");
+Sortie : 0
+
+         ag_weakness("1", "2");
+Sortie : 2
+
+         ag_weakness("   ", "  ");
+Sortie : 1
+
+         ag_weakness("", "Good Luck !");
+Sortie : 2

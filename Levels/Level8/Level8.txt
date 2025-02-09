@@ -1,0 +1,36 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level8/ag_lst_circle_size                              #
+#    Fichier de rendu : ag_lst_circle_size.c, ag_lst_circle_size.h             #
+#    Fonction Autorisees : Aucune                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          size_t ag_lst_circle_size(t_circle_lst *lst);                       #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui permet de connaitre la taille d'une liste
+chainee circulaire, soit le nombre de maillon posseder par cette liste.
+
+Si la liste est NULL, alors on estime la taille a 0.
+
+La structure sera la suivante :
+
+typedef struct s_circle_lst
+{
+        void                    *content;
+        struct s_circle_lst      *next; 
+}       t_circle_lst;
+
+On estime que la liste envoyee en parametre sera toujours circulaire.
+
+Exemple :
+
+         ag_lst_circle_size(temp1->temp2->temp3->temp1);
+Sortie : 3
+
+(peu d'exemple car le but est d'egalement d'experimenter les nombreux tests
+avant la suite)

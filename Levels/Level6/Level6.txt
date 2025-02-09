@@ -1,0 +1,38 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level6/ag_strdup_fd                                    #
+#    Fichier de rendu : ag_strdup_fd.c                                         #
+#    Fonction Autorisees : malloc, write                                       #
+#                                                                              #
+#    Protoype :                                                                #
+#          char *ag_strdup_fd(char *str, int fd);                              #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui va copier une chaine de caracteres mis en
+premier parametre dans une nouvelle chaine allouee, l'ecrire dans une sortie
+renseignee en second parametre puis renvoyer la nouvelle chaine allouee.
+
+Si le fd n'est pas valide, alors la fonction n'ecrira pas dans le fd mais
+devra tout de meme renvoyee une chaine allouee.
+
+Si un NULL est envoye, alors il faudra ecrire dans la sortie (si valide) "(null)" et
+la fonction renverra un NULL.
+
+Exemples :
+
+         ag_strdup_fd(NULL, 1);
+Sortie : NULL
+
+         ag_strdup_fd("Bonjour !", 1);
+Sortie : Bonjour !
+
+         ag_strdup_fd("Viel Gluck !", -1);
+Sortie : Viel Gluck
+
+         ag_strdup_fd("42 Student", 42);
+Sortie : 42 Student
+

@@ -1,0 +1,43 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level10/ag_reverse_lst                                 #
+#    Fichier de rendu : ag_reverse_lst.c, ag_reverse_lst.h                     #
+#    Fonction Autorisees : malloc                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          t_reverse *ag_reverse_lst(t_reverse *lst);                          #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui prend en parametre une liste et qui renvoie
+une liste alloue dont tout les elements sont ceux de la liste passee en
+parametre mais inverses.
+
+Si la liste passee en parametre est NULL, alors la fonction doit renvoyer un
+NULL.
+
+typedef struct s_reverse
+{
+        void                      *content;
+        struct s_reverse      *next;
+}       t_reverse;
+
+On estime que la liste passee en parametre sera toujours une liste simple
+et lineaire.
+
+Exemples :
+
+         ag_reverse_lst(1->2->3->saucisse);
+Sortie : saucisse->3->2->1
+
+         ag_reverse_lst(toi->en->crois->je);
+Sortie : je->crois->en->toi
+
+         ag_reverse_lst(42->Student->artgirar);
+Sortie : artgirar->Student->42
+
+         ag_reverse_lst(ad_x_al);
+Sortie : ad_x_al

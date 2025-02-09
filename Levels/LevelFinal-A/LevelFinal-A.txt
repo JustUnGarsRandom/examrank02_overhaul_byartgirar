@@ -1,0 +1,50 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : LevelFinal-A/ag_split_lst_prime                        #
+#    Fichier de rendu : ag_split_lst_prime.c                                   #
+#    Fonction Autorisees : malloc, atoi, write                                 #
+#                                                                              #
+#    Protoype :                                                                #
+#          t_split *ag_split_lst_prime(char *str);                             #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui prend en parametre une chaine de caracteres
+et qui doit retourner une liste chainee contenant tout les nombres premiers
+present dans la chaine de caractere mis en parametre.
+
+La fonction devra egalement ecrire dans la sortie standard les nombres
+non-premiers.
+ 
+On considere que 0 et 1 ne sont pas premiers.
+
+Si la chaine mise en parametre est NULL, alors la fonction doit renvoyer un NULL
+et doit afficher un message d'erreur comprehensible et logique sur la sortie
+d'erreur.
+
+typedef struct s_split
+{
+        long                number;
+        struct s_split      *next; 
+}       t_split;
+
+Exemples :
+
+         ag_split_lst_prime("1 2 3 4");
+Sortie : 1 | 4
+         2->3
+
+         ag_split_lst_prime("42 Student");
+Sortie : 42
+         NULL
+
+         ag_split_lst_prime("CoucouToi42Oui1 2 3Damien !");
+Sortie : 42 | 1
+         2->3
+
+         ag_split_lst_prime("Bona Fortuna / Suerte / SAUCISSON");
+Sortie : 
+         NULL

@@ -1,0 +1,29 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level3/is_multiple                                     #
+#    Fichier de rendu : is_multiple.c                                          #
+#    Fonction Autorisees : Aucune                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          int is_multiple(int number, int multiple);                          #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui prend en parametre deux int et qui renvoie
+0 si le premier int est un multiple du deuxieme int ou un autre entier si ce
+n'est pas le cas.
+
+         is_multiple(2, 1);
+Sortie : 0
+
+         is_multiple(42, 42);
+Sortie : 0;
+
+         is_multiple(2, 67);
+Sortie : 1;
+
+         is_multiple(0, 8);
+Sortie : 0;

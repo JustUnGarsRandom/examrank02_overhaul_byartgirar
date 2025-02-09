@@ -1,0 +1,32 @@
+# **************************************************************************** #
+#                                                                              #
+#    Dossier de rendu : Level5/ag_strjoin_free                                 #
+#    Fichier de rendu : ag_strjoin_free.c                                      #
+#    Fonction Autorisees : malloc                                              #
+#                                                                              #
+#    Protoype :                                                                #
+#          char *ag_strjoin_free(char *str1, char *str2);                      #
+#                                                                              #
+#                                                                              #
+# **************************************************************************** #
+
+Consignes Generales
+
+Vous devez creer une fonction qui prend en parametre deux chaines de caractere
+allouee pour les rejoindre dans une unique chaine. Les deux chaines sont liberees
+et definie a NULL a la fin.
+
+Si l'une des deux chaines est NULL, alors la fonction n'execute rien et renvoie
+un NULL.
+
+Exemples :
+
+         ag_strjoin_free(str1, NULL);
+Sortie : NULL
+
+         str1 = strdup("Bonj");
+         str2 = strdup("our !");
+         result = ag_strjoin_free(str1, str2)
+Sortie : result = "Bonjour !"
+         str1 = NULL
+         str2 = NULL

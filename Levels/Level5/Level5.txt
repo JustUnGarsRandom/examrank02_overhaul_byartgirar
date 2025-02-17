@@ -2,7 +2,7 @@
 #                                                                              #
 #    Dossier de rendu : Level5/ag_strjoin_free                                 #
 #    Fichier de rendu : ag_strjoin_free.c                                      #
-#    Fonction Autorisees : malloc                                              #
+#    Fonction Autorisees : malloc, free                                        #
 #                                                                              #
 #    Protoype :                                                                #
 #          char *ag_strjoin_free(char *str1, char *str2);                      #

@@ -13,7 +13,7 @@
 Consignes Generales
 
 Vous devez creer une fonction qui prend en parametre deux int et qui renvoie
-0 si le premier int est un multiple du deuxieme int ou un autre entier si ce
+0 si le deuxieme int est un multiple du premier int ou un autre entier si ce
 n'est pas le cas.
 
          is_multiple(2, 1);
